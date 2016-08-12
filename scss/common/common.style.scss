@@ -1,0 +1,90 @@
+// Place holder text color
+::-webkit-input-placeholder {
+    /* Safari, Chrome and Opera */
+    color: darkgrey !important;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: darkgrey !important;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: darkgrey !important;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: darkgrey !important;
+}
+
+::-ms-input-placeholder {
+    /* Edge */
+    color: $stable !important;
+}
+
+:placeholder-shown {
+    /* Standard one last! */
+    color: $stable !important;
+}
+
+// Flat & Round button
+.button-round {
+    border-radius: 50% !important;
+    width: 52px;
+    height: 52px;
+}
+
+.button-float {
+    z-index: 12 !important;
+    position: absolute;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !important;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+    -webkit-transition: 0.2s linear !important;
+    transition: 0.2s linear !important;
+    -webkit-transition-property: -webkit-transform, all !important;
+    transition-property: transform, all !important;
+}
+
+.button-float:hover {
+    -webkit-transform: translate3d(0, -1px, 0) !important;
+    transform: translate3d(0, -1px, 0) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4) !important;
+}
+
+.backdrop {
+    background: rgba(37, 132, 222, 0.64);
+}
+
+.item {
+    background-color: $dark;
+    color: white;
+}
+
+.popover-backdrop.active {
+    background-color: rgba(0, 0, 0, 0.74);
+}
+
+.bar.bar-header .button {
+    color: white;
+}
+
+.privacy-view ion-content{
+    padding: 10px;
+    color: white;
+    background: $dark;
+}
+.privacy-view .bar-header h1{
+    color: white;
+    margin-top: 0px!important;
+}
+.privacy-view .bar-header{
+    background: #1F2429;
+    color: white;
+    height: 45px!important;
+}
+.privacy-view .bar.bar-header .button{
+    margin-top: 0px!important;
+}

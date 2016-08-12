@@ -1,0 +1,53 @@
+<ion-view class="feed-view">
+    <ion-content>
+        <div class="list card" ng-repeat="post in vm.newfeed | orderBy:'startedAt':true">
+            <div class="item item-avatar">
+                <img ng-src="{{post.user.avatar}}">
+                <h2 class="title">{{ post.user.name }} {{ post.status }} a workout</h2>
+                <p class="time">
+                    <i class="icon ion-clock"></i> {{ post.time.hours
+                    < 10? '0' + post.time.hours : post.time.hours }}:{{ post.time.minutes < 10? '0' + post.time.minutes : post.time.minutes }} {{ post.time.ampm }}</p>
+                        <p class="position">
+                            <i class="icon ion-ios-location"></i> {{post.location.name}}
+                        </p>
+            </div>
+            <div class="item item-body">
+                <img class="post-image" ng-src="{{post.image}}" ng-if="post.image != ''">
+                <p class="description">{{post.content}}</p>
+                <p class="team-description" ng-if="post.taggedFriendsName.length>0">With {{post.taggedFriendsName.join(', ') }}<span ng-if="post.taggedFriendsName.length > 3">, and <span class="addition">{{ post.taggedFriendsName.length - 3 }} others...</span></span>
+                </p>
+                <div class="team-avatar" ng-if="post.taggedFriendsAvatar.length>0">
+                    <img ng-src="{{avatar}}" ng-repeat="avatar in post.taggedFriendsAvatar">
+                </div>
+                <p class="user-action">
+                    <a href="#" class="subdued" ng-click="vm.loadPostComments(post, $index)">
+                        <img src="img/feed-chat-icon.svg">
+                    </a>
+                    <a href="#" class="subdued" ng-click="vm.likePost(post)">
+                        <img ng-src="img/feed-like-{{ post.likes && post.likes.indexOf(vm.user.uid) == -1 ? 'icon' : 'solid' }}.svg">{{ post.likes.length?post.likes.length:'' }}
+                    </a>
+                </p>
+            </div>
+            <div class="comment-section" ng-show="vm.commentSectionOnPost == $index">
+                <ion-list>
+                    <ion-item class="item item-avatar" ng-repeat="cmt in post.comments">
+                        <img ng-src="{{ cmt.user.avatar }}">
+                        <h2>{{ cmt.user.name }}</h2>
+                        <p>{{ cmt.comment }}</p>
+                    </ion-item>
+                </ion-list>
+                <div class="item item-input-inset comment-section">
+                    <label class="item-input-wrapper clearfix">
+                        <input type="text" placeholder="enter your comment" ng-model="vm.newComment">
+                    </label>
+                    <button class="button button-small" ng-click="vm.addComment(post)">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <button class="button button-round button-float" ng-click="showWorkoutModal()" ng-class="{'button-calm': floatButton=='workout-add', 'button-energized': floatButton=='workout-complete'}">
+        <i class="icon" ng-class="{'ion-plus-round': floatButton=='workout-add', 'ion-android-checkbox-outline': floatButton=='workout-complete'}"></i>
+    </button>
+</ion-view>

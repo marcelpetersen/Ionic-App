@@ -1,0 +1,57 @@
+.calendar .flex-calendar .days .day.event:before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #2196F3;
+    position: absolute;
+    margin-left: 0;
+    z-index: -1;
+    top: 15px;
+    left: 7px;
+    bottom: auto;
+}
+.flex-calendar .days .day.event{
+    color: white;
+}
+.calendar-view {
+    background-color: $dark;
+
+    .item{
+        background-color: $dark;
+        color: white;
+    }
+    .item .time{
+        color: #FFB835;
+        width: 88px;
+        display: inline-block;
+    }
+    .flex-calendar {
+        .month,
+        .week,
+        .days {
+            background-color: transparent;
+        }
+        .days {
+            .day {
+                background-color: transparent;
+                border: none;
+                &.out {
+                    background-color: transparent;
+                }
+                &.disabled {
+                    .number {
+                        background-color: transparent;
+                        background-image: none;
+                    }
+                }
+            }
+        }
+    }
+    .header {
+        text-align: center;
+        .button {
+            font-size: 12px;
+        }
+    }
+}

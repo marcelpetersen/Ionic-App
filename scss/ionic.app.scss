@@ -1,0 +1,53 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+$calm:                            #2584de !default;
+$dark:                            #2a343f !default;
+$energized:                       #feb158 !default;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+@import "scss/common/common.variable";
+@import "scss/tutorial/tutorial.variable";
+@import "scss/gym/gym.variable";
+@import "scss/goal/goal.variable";
+@import "scss/home/home.variable";
+@import "scss/home/calendar.variable";
+@import "scss/home/feed.variable";
+@import "scss/home/profile.variable";
+@import "scss/invite/invite.variable";
+@import "scss/workout/schedule.variable";
+@import "scss/workout/invite.variable";
+
+@import "scss/common/common.style";
+@import "scss/tutorial/tutorial.style";
+@import "scss/gym/gym.style";
+@import "scss/goal/goal.style";
+@import "scss/home/home.style";
+@import "scss/home/calendar.style";
+@import "scss/home/feed.style";
+@import "scss/home/profile.style";
+
+@import "scss/home/workout-start.style";
+@import "scss/home/workout-complete.style";
+
+@import "scss/invite/invite.style";
+@import "scss/workout/schedule.style";
+@import "scss/workout/invite.style";

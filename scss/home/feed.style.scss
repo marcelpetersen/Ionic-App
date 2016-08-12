@@ -1,0 +1,81 @@
+.ionic_timepicker_popup .heading,
+.ionic_timepicker_popup .button_set,
+.ionic_timepicker_popup .button_close {
+    background-color: #2A343F!important;
+}
+
+.comment-section {
+    border-top: 1px solid #565656;
+    background-color: #2E3338;
+    h2 {
+        color: white;
+        font-weight: bold;
+    }
+    p {
+        color: #B9B9B9;
+    }
+}
+
+.feed-view {
+    background-color: $dark;
+    .card {
+        background-color: transparent;
+        margin-left: 0px;
+        margin-right: 0px;
+        .post-image {
+            width: 100%;
+        }
+        .item {
+            background-color: transparent;
+            border: none;
+            .title {
+                color: $light;
+            }
+            .time,
+            .position,
+            .description,
+            .team-description {
+                color: darkgrey;
+            }
+            .addition {
+                color: $calm;
+            }
+        }
+        .item-avatar {
+            padding-left: 92px;
+        }
+        .item-avatar > img:first-child {
+            max-width: 60px;
+            max-height: 60px;
+            border-radius: 0px;
+        }
+        .comment-section {
+            .item-avatar {
+                padding-left: 70px;
+            }
+            .item-avatar > img:first-child {
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .team-avatar {
+            img {
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                margin-right: 8px;
+            }
+        }
+        .user-action {
+            text-align: right;
+            img {
+                width: 22px;
+            }
+        }
+    }
+    .button-round {
+        bottom: 75px;
+        right: 22px;
+    }
+}

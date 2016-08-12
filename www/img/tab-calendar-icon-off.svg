@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="23px" height="25px" viewBox="0 0 23 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>cal</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0,0.00900580706 L21.6702474,0.00900580706 L21.6702474,24.8385969 L0,24.8385969 L0,0.00900580706 Z"></path>
+        <path id="path-3" d="M0,0.00900580706 L21.6702474,0.00900580706 L21.6702474,24.8385969 L0,24.8385969 L0,0.00900580706 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Calendar" sketch:type="MSArtboardGroup" transform="translate(-52.000000, -613.000000)">
+            <g id="Nav" sketch:type="MSLayerGroup" transform="translate(-1.000000, 598.000000)">
+                <g id="CALENDAR-+-cal" transform="translate(34.000000, 15.000000)">
+                    <g id="cal" transform="translate(19.453125, 0.000000)">
+                        <g id="Group-3">
+                            <mask id="mask-2" sketch:name="Clip 2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M18.5936846,21.7398246 L3.0987578,21.7398246 L3.0987578,7.79534912 L18.5926194,7.79534912 L18.5926194,21.7398246 L18.5936846,21.7398246 Z M19.1866637,2.4915582 L17.0432332,2.4915582 L17.0432332,0.00900580706 L13.9444609,0.00900580706 L13.9444609,2.4915582 L7.74691628,2.4915582 L7.74691628,0.00900580706 L4.64814396,0.00900580706 L4.64814396,2.4915582 L3.0987578,2.4915582 C1.72086932,2.4915582 0.0115574524,3.60881088 0.0115574524,4.9741106 L-1.45254953e-05,22.3560445 C-1.45254953e-05,23.7213442 1.10464939,24.8385969 2.48360307,24.8385969 L19.1866637,24.8385969 C20.551915,24.8385969 21.6702329,23.7213442 21.6702329,22.3560445 L21.6702329,4.97512738 C21.6691677,3.60881088 20.551915,2.4915582 19.1866637,2.4915582 L19.1866637,2.4915582 Z" id="Fill-1" fill="#6D6D6D" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                        </g>
+                        <mask id="mask-4" sketch:name="Clip 5" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Clip-5"></g>
+                        <path d="M4.64815848,9.34473528 L9.29631696,9.34473528 L9.29631696,13.9928938 L4.64815848,13.9928938 L4.64815848,9.34473528 Z" id="Fill-4" fill="#6d6d6d" sketch:type="MSShapeGroup" mask="url(#mask-4)"></path>
+                        <path d="M12.3950893,9.34473528 L17.0432478,9.34473528 L17.0432478,13.9928938 L12.3950893,13.9928938 L12.3950893,9.34473528 Z" id="Fill-6" fill="#6d6d6d" sketch:type="MSShapeGroup" mask="url(#mask-4)"></path>
+                        <path d="M4.64815848,15.5422799 L9.29631696,15.5422799 L9.29631696,20.1904384 L4.64815848,20.1904384 L4.64815848,15.5422799 Z" id="Fill-7" fill="#6d6d6d" sketch:type="MSShapeGroup" mask="url(#mask-4)"></path>
+                        <path d="M12.3950893,15.5422799 L17.0432478,15.5422799 L17.0432478,20.1904384 L12.3950893,20.1904384 L12.3950893,15.5422799 Z" id="Fill-8" fill="#6d6d6d" sketch:type="MSShapeGroup" mask="url(#mask-4)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

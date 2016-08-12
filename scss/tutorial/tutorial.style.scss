@@ -1,0 +1,116 @@
+.tutorial-view {
+    .slider {
+        height: 100%;
+    }
+    // slider pager
+    .slider-pager-page {
+        color: white !important;
+        &.active {
+            color: white !important;
+        }
+    }
+    .button {
+        &.button-tutorial-1 {
+            @include button-style($button-tutorial-1-bg, $button-tutorial-1-border, $button-tutorial-1-active-bg, $button-tutorial-1-active-border, $button-tutorial-1-text);
+            @include button-clear($button-tutorial-1-bg);
+            @include button-outline($button-tutorial-1-bg);
+        }
+        &.button-tutorial-2 {
+            @include button-style($button-tutorial-2-bg, $button-tutorial-2-border, $button-tutorial-2-active-bg, $button-tutorial-2-active-border, $button-tutorial-2-text);
+            @include button-clear($button-tutorial-2-bg);
+            @include button-outline($button-tutorial-2-bg);
+        }
+        &.button-tutorial-3 {
+            @include button-style($button-tutorial-3-bg, $button-tutorial-3-border, $button-tutorial-3-active-bg, $button-tutorial-3-active-border, $button-tutorial-3-text);
+            @include button-clear($button-tutorial-3-bg);
+            @include button-outline($button-tutorial-3-bg);
+        }
+        &.button-tutorial-4 {
+            @include button-style($button-tutorial-4-bg, $button-tutorial-4-border, $button-tutorial-4-active-bg, $button-tutorial-4-active-border, $button-tutorial-4-text);
+            @include button-clear($button-tutorial-4-bg);
+            @include button-outline($button-tutorial-4-bg);
+        }
+    }
+    .app-logo {
+        width: 100%;
+        height: 64%;
+        display: table;
+        text-align: center;
+        .tutor-image {
+            display: table-cell;
+            width: 100%;
+            height: 100%;
+            width: 100%;
+            vertical-align: middle;
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    .tutor-title {
+        height: 18%;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        h1 {
+            font-size: 18px;
+            font-weight: 400;
+            color: $stable;
+        }
+        p {
+            color: $stable;
+        }
+    }
+    .tutor-footer {
+        color: white;
+        text-align: center;
+        width: 90%;
+        position: absolute;
+        bottom: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+    }
+    .next {
+        height: 18%;
+        text-align: center;
+        button {
+            border-radius: 25px;
+            width: 150px;
+        }
+    }
+    .page-1 {
+        background-color: $tutorial-1-bg;
+    }
+    .page-2 {
+        background-color: $tutorial-2-bg;
+    }
+    .page-3 {
+        background-color: $tutorial-3-bg;
+    }
+    .page-4 {
+        background-color: $tutorial-4-bg;
+        .app-logo {
+            height: 25%;
+        }
+        .tutor-title {
+            height: 25%;
+        }
+        .buttons {
+            height: 18%;
+            text-align: center;
+            button {
+                border-radius: 25px;
+                margin-bottom: 10px;
+                width: 80%;
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.workout-complete-view {
+  background-color: $dark;
+
+  .bar-header {
+    border-bottom: 1px solid darkgrey;
+  }
+
+  .scroll-content {
+    margin-bottom: 50px;
+  }
+
+  .item {
+    background-color: transparent;
+    border: none;
+  }
+
+  .complete {
+    margin-top: 10px;
+
+    .title {
+      text-align: center;
+      color: $default-grey;
+      font-size: 12px;
+    }
+
+    .description {
+      text-align: center;
+      color: $light;
+      font-size: 32px;
+      font-weight: 400;
+    }
+  }
+
+  .about {
+    margin-top: 10px;
+
+    .item {
+      border-bottom: 1px solid darkgrey;
+    }
+
+    input {
+      color: $light;
+    }
+  }
+
+  .additional {
+    margin-top: 50px;
+    color: $light;
+
+    i {
+      font-size: 20px;
+      left: 0px;
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0px;
+
+    width: 100%;
+
+    .button {
+      margin: 0px;
+    }
+  }
+}

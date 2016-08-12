@@ -1,0 +1,120 @@
+.workout-invite-view {
+  background-color: $dark;
+
+  .bar-header {
+    border-bottom: 1px solid darkgrey;
+  }
+
+  .scroll-content {
+    margin-bottom: 70px;
+  }
+
+  .suggest {
+    padding: 16px;
+
+    p {
+      color: $light;
+      font-size: 12px;
+    }
+
+    #workout-invite-suggest-region {
+      width: -webkit-max-content;
+      width: max-content;
+      height: 56px;
+    }
+
+    .suggest-avatar {
+      img {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        margin-right: 15px;
+        margin-left: 15px;
+        border: 1px solid $light;
+        float: left;
+      }
+    }
+  }
+
+  .search {
+    .item {
+      background-color: transparent;
+      border-top: 1px solid darkgrey;
+      border-bottom: 1px solid darkgrey;
+      color: $default-grey;
+    }
+
+    input {
+      color: $light;
+    }
+  }
+
+  .members {
+    padding-top: 10px;
+
+    h3 {
+      text-align: left;
+      color: $light;
+    }
+
+    .item {
+      background-color: transparent;
+      border-color: transparent;
+
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    .item-checkbox {
+      .checkbox {
+        margin-top: -28px;
+      }
+
+      padding-left: 70px;
+
+      img {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: 1px solid darkgrey;
+
+        position: absolute;
+        top: 12px;
+        left: 15px;
+      }
+    }
+
+    .checkbox input, .checkbox-icon {
+      width: 42px;
+      height: 42px;
+    }
+
+    .checkbox-icon:after {
+      width: 20px;
+      height: 10px;
+      border-width: 2px;
+    }
+    // Checked
+    .checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
+      border-color: $calm;
+      background-color: $calm;
+    }
+
+    // Unchecked
+    .checkbox input:before, .checkbox .checkbox-icon:before {
+      border-color: $stable;
+      background-color: transparent;
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+
+    .button-clear {
+      margin-top: 10px;
+    }
+  }
+
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="24px" viewBox="0 0 28 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>feed</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Calendar" sketch:type="MSArtboardGroup" transform="translate(-171.000000, -614.000000)" fill="#feb158">
+            <g id="Nav" sketch:type="MSLayerGroup" transform="translate(-1.000000, 598.000000)">
+                <g id="FEED-+-feed" transform="translate(172.000000, 16.000000)" sketch:type="MSShapeGroup">
+                    <g id="feed">
+                        <path d="M6.80083797,3.41498603 L27.3199416,3.41498603 L27.3199416,0 L6.80083797,0 L6.80083797,3.41498603 Z" id="Fill-1"></path>
+                        <path d="M0,3.41498603 L3.41498603,3.41498603 L3.41498603,0 L0,0 L0,3.41498603 Z" id="Fill-2"></path>
+                        <path d="M6.80083797,23.9049022 L27.3199416,23.9049022 L27.3199416,20.4899162 L6.80083797,20.4899162 L6.80083797,23.9049022 Z" id="Fill-3"></path>
+                        <path d="M0,23.9049022 L3.41498603,23.9049022 L3.41498603,20.4899162 L0,20.4899162 L0,23.9049022 Z" id="Fill-4"></path>
+                        <path d="M6.80083797,13.6599441 L27.3199416,13.6599441 L27.3199416,10.2449581 L6.80083797,10.2449581 L6.80083797,13.6599441 Z" id="Fill-5"></path>
+                        <path d="M0,13.6599441 L3.41498603,13.6599441 L3.41498603,10.2449581 L0,10.2449581 L0,13.6599441 Z" id="Fill-6"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

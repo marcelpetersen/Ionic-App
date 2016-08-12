@@ -1,0 +1,10 @@
+<div class="card">
+    <div class="item item-text-wrap">
+        <ul>
+            <li>Name: {{ currentworkout.name }}</li>
+            <li>Date: {{ currentworkout.date | date: 'shortDate' }}</li>
+            <li>Time: {{ currentworkout.time | date: 'shortTime' }}</li>
+            <li>Location: {{ currentworkout.location }}</li>
+        </ul>
+    </div>
+</div>

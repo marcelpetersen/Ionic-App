@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0,0.0407412367 L21.3296621,0.0407412367 L21.3296621,21.3704033 L0,21.3704033 L0,0.0407412367 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Calendar" sketch:type="MSArtboardGroup" transform="translate(-329.000000, -18.000000)">
+            <g id="Page-1" sketch:type="MSLayerGroup" transform="translate(329.000000, 18.000000)">
+                <mask id="mask-2" sketch:name="Clip 2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M17.1822458,12.0381398 L11.9974027,12.0381398 L11.9974027,17.3703262 L9.33130953,17.3703262 L9.33130953,12.0381398 L4.14742457,12.0381398 L4.14742457,9.3720466 L9.33130953,9.3720466 L9.33130953,4.0398602 L11.9974027,4.0398602 L11.9974027,9.3720466 L17.1822458,9.3720466 L17.1822458,12.0381398 Z M18.9596968,0.0407204078 L2.36997356,0.0407204078 C1.06054688,0.0407204078 -1.66630825e-05,1.10128395 -1.66630825e-05,2.41066897 L-1.66630825e-05,19.0004339 C-1.66630825e-05,20.3098606 1.06054688,21.3703825 2.36997356,21.3703825 L18.9596968,21.3703825 C20.2691235,21.3703825 21.329687,20.3098606 21.329687,19.0004339 L21.329687,2.41066897 C21.329687,1.10128395 20.2691235,0.0407204078 18.9596968,0.0407204078 L18.9596968,0.0407204078 Z" id="Fill-1" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,92 @@
+.profile-view {
+    background-color: $dark;
+    .search {
+        width: 100%;
+        border: 1px solid #A9A9A9;
+        border-left: none;
+        border-right: none;
+        background: rgba(0, 0, 0, 0);
+        padding-left: 15px;
+        height: 45px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        color: white;
+    }
+    .item {
+        background-color: #2A343F;
+        border: none;
+    }
+    .item h3 {
+        color: white;
+    }
+    .divider {
+        height: 1px;
+        background-color: #A9A9A9;
+    }
+    .avatar {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid darkgrey;
+        text-align: center;
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 400;
+            color: $light;
+        }
+    }
+    .button-bar {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    path {
+        fill: $light;
+    }
+    ellipse {
+        stroke: $light;
+    }
+    .tab-goal {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        // border-bottom: 1px solid darkgrey;
+        text-align: center;
+        .title {
+            text-align: left;
+            color: $stable;
+        }
+        .description {
+            text-align: center;
+            color: $light;
+        }
+        .title {
+            color: $stable;
+        }
+        .value {
+            color: $light;
+            text-align: left;
+        }
+    }
+    .tab-friend {
+        .item-button-right > .button{
+            top: 18px;
+        }
+        .search-wrap{
+            position: relative;
+
+            i{
+                position: absolute;
+                line-height: 40px;
+                right: 10px;
+            }
+        }
+        ion-item h2{
+            color: white;
+            line-height: 40px;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+<ion-view class="tutorial-view">
+    <ion-slide-box>
+        <!-- page 1 -->
+        <ion-slide class="page-1">
+            <div class="app-logo">
+                <div class="tutor-image">
+                    <img src="img/tutorial-1-logo.png">
+                </div>
+            </div>
+            <div class="tutor-title">
+                <h1>HELLO FRIEND!</h1>
+                <p>
+                    Welcome to Fittus, where you always work out with a friend.
+                </p>
+            </div>
+            <div class="next">
+                <button class="button button-tutorial-1" ng-click="goNext()">
+                    <i class="icon ion-arrow-right-c"></i>
+                </button>
+            </div>
+        </ion-slide>
+
+        <!-- page 2 -->
+        <ion-slide class="page-2">
+            <div class="app-logo">
+                <div class="tutor-image">
+                    <img src="img/tutorial-2-logo.png">
+                </div>
+            </div>
+            <div class="tutor-title">
+                <h1>STAY INSPIRED</h1>
+                <p>
+                    Get inspired by other members to keep coming back and to never lose motivation.
+                </p>
+            </div>
+            <div class="next">
+                <button class="button button-tutorial-2" ng-click="goNext()">
+                    <i class="icon ion-arrow-right-c"></i>
+                </button>
+            </div>
+        </ion-slide>
+
+        <!-- page 3 -->
+        <ion-slide class="page-3">
+            <div class="app-logo">
+                <div class="tutor-image">
+                    <img src="img/tutorial-3-logo.png">
+                </div>
+            </div>
+            <div class="tutor-title">
+                <h1>CONNECT AND GROW</h1>
+                <p>
+                    Easily find others in the fitness community, build groups, and find workout partners.
+                </p>
+            </div>
+            <div class="next">
+                <button class="button button-tutorial-3" ng-click="goNext()">
+                    <i class="icon ion-arrow-right-c"></i>
+                </button>
+            </div>
+        </ion-slide>
+
+        <!-- page 4 -->
+        <ion-slide class="page-4">
+            <div class="app-logo">
+                <div class="tutor-image">
+                    <img src="img/tutorial-4-logo.png">
+                </div>
+            </div>
+            <div class="tutor-title">
+                <h1>LET'S GET STARTED</h1>
+                <p>
+                    Log in now to meet friends through fitness.
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="button button-tutorial-4" ng-click="loginFacebook()">
+                    <i class="icon ion-social-facebook"></i>
+                    LOG IN WITH FACEBOOK
+                </button>
+
+                <button class="button button-tutorial-4" ng-click="loginGoogle()">
+                    <i class="icon ion-social-google"></i>
+                    LOG IN WITH GOOGLE
+                </button>
+            </div>
+            <div class="tutor-footer">
+                By signing up you agree to our <br><strong ui-sref="privacy">Terms of Service</strong> and our <strong ui-sref="privacy">Privacy Policy</strong>
+            </div>
+        </ion-slide>
+
+    </ion-slide-box>
+
+</ion-view>

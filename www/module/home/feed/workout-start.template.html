@@ -1,0 +1,51 @@
+<ion-modal-view class="workout-start-view">
+
+    <div class="bar bar-header bar-dark">
+        <button class="button button-clear" ng-click="closeModal('workout-add')">
+            <i class="icon ion-arrow-left-c" ></i>
+        </button>
+    </div>
+
+    <ion-content class="has-header padding">
+
+        <div class="about">
+            <label class="item item-input">
+                <input type="text" placeholder="Say something about your workout" ng-model="vm.post.content">
+            </label>
+        </div>
+
+        <div class="time-location">
+            <div class="row">
+                <div class="col-33" ng-click="vm.openTimePicker()">TIME:</div>
+                <div class="col-67">LOCATION:</div>
+            </div>
+            <div class="row">
+                <div class="col-33 time" ng-click="vm.openTimePicker()">{{ vm.post.time.hours < 10? '0' + vm.post.time.hours : vm.post.time.hours }}:{{ vm.post.time.minutes < 10? '0' + vm.post.time.minutes : vm.post.time.minutes }} {{ vm.post.time.ampm }}</div>
+                <div class="col-67 location">{{ vm.user.gym.name }}</div>
+            </div>
+        </div>
+
+        <div class="additional">
+            <div class="list">
+                <a class="item item-icon-left" ng-click="vm.openTagFriendModal()">
+                    <i class="icon ion-pricetags"></i>
+                    Tag Friends
+                </a>
+                <a class="item item-icon-left" ng-click="vm.attachPhoto()">
+                    <i class="icon ion-ios-cloud-upload"></i>
+                    Attach Photo
+                </a>
+                <a class="item item-icon-left" ng-click="vm.openChangeGymModal()">
+                    <i class="icon ion-ios-location"></i>
+                    Change location
+                </a>
+            </div>
+        </div>
+
+    </ion-content>
+
+    <div class="footer">
+        <button class="button button-full button-calm" ng-click="doStartWorkout()">START WORKOUT</button>
+    </div>
+
+</ion-modal-view>

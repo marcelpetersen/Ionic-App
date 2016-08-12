@@ -1,0 +1,12 @@
+{
+  "name": "Fittus",
+  "app_id": "b0959e4d",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

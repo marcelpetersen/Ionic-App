@@ -1,0 +1,102 @@
+.workout-schedule-view {
+  background-color: $dark;
+
+  .bar-header {
+    border-bottom: 1px solid darkgrey;
+  }
+
+  .list {
+    margin-top: 20px;
+  }
+
+  .item {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid darkgrey;
+    color: $default-grey;
+
+    i:first-child {
+      position: absolute;
+      top: 35px;
+      right: 0px;
+    }
+
+    input {
+      color: $light;
+      font-size: 16px;
+    }
+
+    .input-label {
+      color: $default-grey;
+      font-size: 11px;
+    }
+
+    &.item-stacked-label {
+      input, textarea {
+        background-color: transparent;
+      }
+    }
+
+    &.item-toggle {
+      margin-top: 15px;
+      border: none;
+      color: $light;
+      font-size: 16px;
+    }
+  }
+
+  .description {
+    color: $default-grey;
+  }
+
+  .selected-days {
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    width: 100%;
+
+    .row {
+      padding: 0px;
+    }
+    .col {
+      color: $light;
+      font-size: 16px;
+      text-align: center;
+
+      &.selected {
+        background-color: $calm;
+      }
+    }
+  }
+
+  .toggle {
+
+    .track {
+      margin-top: 8px;
+      height: 16px;
+     }
+
+    input:checked + .track, .track {
+      border-color: $toggle-track-color;
+      background-color: $toggle-track-color;
+    }
+
+    input:checked + .track .handle {
+      background-color: $calm;
+    }
+
+    .handle {
+      border-color: $light;
+    }
+  }
+
+  .bar-footer {
+    background-color: $calm;
+
+    .button {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+<ion-modal-view class="workout-complete-view">
+
+    <div class="bar bar-header bar-dark">
+        <button class="button button-clear" ng-click="closeModal('workout-complete')">
+            <i class="icon ion-arrow-left-c" ></i>
+        </button>
+    </div>
+
+    <ion-content class="has-header padding">
+
+        <div class="complete">
+            <div class="row">
+                <div class="col">
+                    <h1 class="description">{{ vm.workoutDuration.hours }}h {{ vm.workoutDuration.minutes }}m</h1>
+                    <p class="title">WORKOUT DURATION</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <label class="item item-input">
+                <input type="text" placeholder="#crushedit" ng-model="vm.post.content">
+            </label>
+        </div>
+
+        <div class="additional">
+            <div class="list">
+                <a class="item item-icon-left"  ng-click="vm.openTagFriendModal()">
+                    <i class="icon ion-pricetags"></i>
+                    Tag Friends
+                </a>
+                <a class="item item-icon-left"  ng-click="vm.attachPhoto()">
+                    <i class="icon ion-ios-cloud-upload"></i>
+                    Attach Photo
+                </a>
+            </div>
+        </div>
+
+    </ion-content>
+
+    <div class="footer">
+        <button class="button button-full button-calm" ng-click="doCompleteWorkout()">COMPLETE WORKOUT</button>
+    </div>
+
+</ion-modal-view>

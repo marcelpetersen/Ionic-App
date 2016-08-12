@@ -1,0 +1,143 @@
+.invite-view {
+    background-color: $dark;
+    .bar-header {
+        background-color: $calm;
+        height: $invite-header-bar-height;
+        .name {
+            color: $light;
+            top: 0px;
+            font-size: 24px;
+            font-weight: 400;
+        }
+        .description {
+            color: $light;
+            top: 44px;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+    .scroll-content {
+        top: $invite-header-bar-height;
+        margin-bottom: 70px;
+    }
+    .invite-header {
+        text-align: center;
+        color: darkgrey;
+        padding-bottom: 10px;
+        border-bottom: 1px solid darkgrey;
+        .title {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            p {
+                margin: 0px;
+            }
+        }
+        .members {
+            display: table;
+            height: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin-left: 5px;
+                margin-right: 5px;
+                border: 1px solid darkgrey;
+            }
+            .number-cell {
+                display: table-cell;
+                vertical-align: top;
+                .number {
+                    border: 1px solid darkgrey;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    padding-top: 3px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .invite-body {
+        padding-top: 10px;
+        h2 {
+            text-align: center;
+            color: $energized;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .members {
+            padding-top: 10px;
+            h3 {
+                text-align: left;
+                color: $light;
+            }
+            .item {
+                background-color: transparent;
+                border-color: transparent;
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+            .item-checkbox {
+                .checkbox {
+                    margin-top: -28px;
+                }
+                padding-left: 70px;
+                img {
+                    width: 42px;
+                    height: 42px;
+                    border-radius: 50%;
+                    border: 1px solid darkgrey;
+                    position: absolute;
+                    top: 12px;
+                    left: 15px;
+                }
+            }
+            .checkbox input,
+            .checkbox-icon {
+                width: 42px;
+                height: 42px;
+            }
+            .checkbox-icon:after {
+                width: 20px;
+                height: 10px;
+                border-width: 2px;
+            }
+            // Checked
+            .checkbox input:checked:before,
+            .checkbox input:checked + .checkbox-icon:before {
+                border-color: $calm;
+                background-color: $calm;
+            }
+            // Unchecked
+            .checkbox input:before,
+            .checkbox .checkbox-icon:before {
+                border-color: $stable;
+                background-color: transparent;
+            }
+        }
+    }
+    .footer {
+        position: absolute;
+        bottom: 0px;
+        text-align: center;
+        .button-clear {
+            margin-top: 10px;
+        }
+    }
+}
+
+
+/* iOS specific overrides */
+
+.platform-ios.platform-cordova:not(.fullscreen) {
+    .invite-view .bar-header:not(.bar-subheader) {
+        height: $invite-header-bar-height + 20px !important;
+    }
+    .invite-view .scroll-content {
+        top: $invite-header-bar-height + 20px !important;
+    }
+}

@@ -1,0 +1,32 @@
+<ion-view class="gym-view">
+    <div class="bar bar-header">
+        <h1 class="title name">Change Gym</h1>
+    </div>
+    <ion-content class="has-header">
+        <div class="list">
+            <div class="item">
+                <div class="zipcode">
+                    <span>ZIP CODE</span>
+                    <label class="item item-input icon-right">
+                        <input type="text" ng-change="vm.search()" ng-model="vm.zipcode">
+                        <i class="icon ion-ios-location"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="gym">
+                <ion-checkbox ng-click="vm.user.gym = gym" class="item-checkbox" ng-repeat="gym in vm.gyms">
+                    <img ng-src="{{gym.picture_url}}" ng-if="gym.picture_url">
+                    <div class="item-gym">
+                        <h2>{{ gym.name }}</h2>
+                        <p>{{ gym.place }}</p>
+                        <!-- <p class="distance">.4 mi</p> -->
+                    </div>
+                </ion-checkbox>
+            </div>
+        </div>
+    </ion-content>
+
+    <div class="footer">
+        <button class="button button-full button-calm" ng-click="vm.changeGymModal.hide()">CLOSE</button>
+    </div>
+</ion-view>

@@ -1,0 +1,82 @@
+<ion-view class="profile-view">
+    <ion-content>
+        <div class="avatar">
+            <img ng-src="{{ vm.user.avatar }}">
+            <h2>{{ vm.user.name }}</h2>
+        </div>
+        <div class="button-bar">
+            <a class="button button-small button-{{ vm.profileTab != 'friends' ? 'calm':'outline' }}" ng-click="vm.profileTab = 'goals'">GOALS</a>
+            <a class="button button-small button-{{ vm.profileTab == 'friends' ? 'calm':'outline' }}" ng-click="vm.profileTab = 'friends'">FRIENDS</a>
+        </div>
+        <div class="tab-goal" ng-show="vm.profileTab != 'friends'">
+            <div class="row">
+                <div class="col">
+                    <p class="title">Current Goal: </p>
+                    <img ng-repeat="goal in vm.user.goals" ng-src="{{ goal.icon }}" class="goal-icon">
+                    <p class="description">{{ vm.user.goal.name }}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="title">Time at gym MTD:</p>
+                    <h1 class="description">{{ vm.user.time_at_gym }}</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="title">Workout completed MTD:</p>
+                    <h1 class="description">{{ vm.user.workout_complete }}</h1>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row row-center">
+                <div class="col col-75">
+                    <p class="title">GYM:</p>
+                    <p class="value">{{ vm.user.gym.name }}</p>
+                </div>
+                <div class="col col-25" ng-click="vm.openChangeGymModal()">
+                    <a class="button button-small button-clear button-calm">CHANGE</a>
+                </div>
+            </div>
+            <div class="row row-center">
+                <div class="col col-75">
+                    <p class="title">GOAL:</p>
+                    <p class="value" ng-repeat="goal in vm.user.goals">- {{ goal.name }}</p>
+                </div>
+                <div class="col col-25" ng-click="vm.openChangeGoalModal()">
+                    <a class="button button-small button-clear button-calm">CHANGE</a>
+                </div>
+            </div>
+            <div class="row row-center">
+                <div class="col col-75">
+                    <p class="title">LINKED ACCOUNT:</p>
+                    <p class="value"><a target="_blank" href="{{ vm.user.linked_account }}">{{ vm.user.provider }}</a></p>
+                </div>
+                <div class="col col-25">
+                    <a class="button button-small button-clear button-calm" ng-click="vm.logout()">SIGN OUT</a>
+                </div>
+            </div>
+        </div>
+        <div class="tab-friend" ng-show="vm.profileTab == 'friends'">
+            <div class="search-wrap">
+                <input type="text" placeholder="Search friends, people..." class="search" ng-model="vm.searchPeopleInput" ng-change="vm.searchPeople()">
+                <i class="ion-ios-search"></i>
+            </div>
+            <ion-list>
+                <ion-item class="item-avatar item-button-right" ng-repeat="friend in vm.friendList" ng-if="!vm.people.length">
+                    <img ng-src="{{ friend.avatar }}">
+                    <h2>{{ friend.name }}</h2>
+                    <button class="button" ng-click="vm.unfollowPeople(friend.uid)">
+                        Unfollow
+                    </button>
+                </ion-item>
+                <ion-item class="item-avatar item-button-right" ng-repeat="user in vm.people" ng-if="vm.user.linked_account != user.linked_account">
+                    <img ng-src="{{ user.avatar }}">
+                    <h2>{{ user.name }}</h2>
+                    <button class="button button-calm" ng-if="!vm.user.friends.length || vm.user.friends.indexOf(user.uid) == -1" ng-click="vm.followPeople(user.uid)">Follow</button>
+                    <button class="button" ng-if="vm.user.friends.length && vm.user.friends.indexOf(user.uid) != -1" ng-click="vm.unfollowPeople(user.uid)">Unfollow</button>
+                </ion-item>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>

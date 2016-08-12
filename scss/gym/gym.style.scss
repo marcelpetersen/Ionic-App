@@ -1,0 +1,152 @@
+.gym-view {
+  background-color: $dark;
+
+  .bar-header {
+    background-color: $calm;
+    height: $gym-header-bar-height;
+
+    .name {
+      color: $light;
+      top: 0px;
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    .description {
+      color: $light;
+      top: 44px;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+
+  .scroll-content {
+    top: $gym-header-bar-height;
+    margin-bottom: 50px;
+
+    .item {
+      background-color: transparent;
+      border-color: transparent;
+    }
+
+    .zipcode {
+      border: 1px solid $stable;
+
+      span {
+        display: inline-block;
+        font-size: 12px;
+        color: darkgray;
+        padding: 2px 5px;
+        padding-bottom: 0px;
+      }
+    }
+
+    .item-input {
+      color: $stable;
+      font-size: 24px;
+
+      padding-top: 0px;
+      margin-top: -5px;
+
+      .icon {
+        min-width: 20px;
+        margin-top: -10px;
+      }
+
+      input {
+        color: $stable;
+      }
+    }
+
+    .gym {
+      .item {
+        background-color: transparent;
+        border-color: transparent;
+      }
+
+      .item-checkbox {
+        .checkbox {
+          margin-top: -28px;
+        }
+
+        padding-left: 70px;
+
+        img {
+          width: 42px;
+          height: 42px;
+          border-radius: 50%;
+          border: 1px solid darkgrey;
+
+          position: absolute;
+          top: 12px;
+          left: 15px;
+        }
+      }
+
+      .checkbox input, .checkbox-icon {
+        width: 42px;
+        height: 42px;
+      }
+
+      .checkbox-icon:after {
+        width: 20px;
+        height: 10px;
+        border-width: 2px;
+      }
+
+      // Checked
+      .checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
+        border-color: $balanced;
+        background-color: $balanced;
+      }
+
+      // Unchecked
+      .checkbox input:before, .checkbox .checkbox-icon:before {
+        border-color: $stable;
+        background-color: transparent;
+      }
+    }
+
+    .item-gym {
+      position: relative;
+
+      h2 {
+        color: $stable;
+      }
+
+      p {
+        color: darkgray;
+        font-size: 12px;
+      }
+
+      .distance {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+      }
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0px;
+
+    width: 100%;
+
+    .button {
+      margin: 0px;
+    }
+  }
+}
+
+/* iOS specific overrides */
+.platform-ios.platform-cordova:not(.fullscreen) {
+
+  .gym-view .bar-header:not(.bar-subheader) {
+    height: $gym-header-bar-height + 20px !important;
+  }
+
+  .gym-view .scroll-content {
+    top: $gym-header-bar-height + 20px !important;
+  }
+}

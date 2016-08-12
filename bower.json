@@ -1,0 +1,15 @@
+{
+  "name": "HelloIonic",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.2.4"
+  },
+  "dependencies": {
+    "flex-calendar": "*",
+    "angular-sanitize": "^1.5.5",
+    "satellizer": "^0.14.0",
+    "firebase": "^3.0.0",
+    "angularfire": "^1.2.0",
+    "ionic-timepicker": "^0.5.1"
+  }
+}

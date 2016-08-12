@@ -1,0 +1,36 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.ionicframework.fittus503060"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ionicframework.fittus503060"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.ionicframework.fittus503060"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "131776040564855",
+            "APP_NAME": "TestFittus",
+            "PACKAGE_NAME": "com.ionicframework.fittus503060"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.ionicframework.fittus503060"
+        },
+        "com.cordova.plugins.sms": {
+            "PACKAGE_NAME": "com.ionicframework.fittus503060"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ionicframework.fittus503060"
+        }
+    }
+}

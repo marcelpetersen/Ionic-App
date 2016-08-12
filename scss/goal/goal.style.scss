@@ -1,0 +1,115 @@
+.goal-icon{
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+  margin-right: 10px;
+}
+.goal-view {
+  background-color: $dark;
+
+  .bar-header {
+    background-color: $calm;
+    height: $goal-header-bar-height;
+
+    .title {
+      height: $goal-header-bar-height - 34px;
+      overflow: auto;
+      white-space: normal;
+      //text-overflow: initial;
+    }
+    .name {
+      color: $light;
+      top: 0px;
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    .description {
+      color: $light;
+      top: 40px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+  }
+
+  .scroll-content {
+    margin-bottom: 50px;
+  }
+
+  .row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .col {
+    text-align: center;
+  }
+
+  .tab-item {
+    max-width: none;
+
+    path {
+      fill: darkgray;
+    }
+    ellipse {
+      stroke: darkgray;
+    }
+
+    .menu-title {
+      color: darkgray;
+      margin-bottom: 4px;
+    }
+
+    .menu-border {
+      width: 65%;
+      height: 3px;
+      background-color: transparent;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &.active {
+      path {
+        fill: $light;
+      }
+      ellipse {
+        stroke: $light;
+      }
+
+      .menu-title {
+        color: $light;
+      }
+
+      .menu-border {
+        background-color: $energized;
+      }
+
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0px;
+
+    width: 100%;
+
+    .button {
+      margin: 0px;
+    }
+  }
+}
+
+/* iOS specific overrides */
+.platform-ios.platform-cordova:not(.fullscreen) {
+
+  .goal-view .bar-header:not(.bar-subheader) {
+    height: $goal-header-bar-height + 20px !important;
+  }
+
+  .goal-view .scroll-content {
+    top: $goal-header-bar-height + 20px !important;
+  }
+}

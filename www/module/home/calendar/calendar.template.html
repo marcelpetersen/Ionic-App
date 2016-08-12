@@ -1,0 +1,29 @@
+<ion-view class="calendar-view">
+    <ion-content>
+        <div class="header">
+            <div class="row">
+                <div class="col">
+                    <a class="button button-clear button-stable" ng-click="openViewInviteModal()">
+                        VIEW INVITES
+                        <i class="icon ion-ios-bell"></i>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="button button-clear button-stable" ng-click="addWorkout()">
+                        ADD WORKOUT
+                        <i class="icon ion-android-add"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="calendar">
+            <flex-calendar options="options" events="events"></flex-calendar>
+            <ion-list>
+                <ion-item ng-repeat="event in dayEvents" ng-click="openWorkoutDetail(event)">
+                    <span class="time">{{ event.time | date: 'shortTime' }}</span>
+                    {{ event.name }}
+                </ion-item>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>

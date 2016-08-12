@@ -1,0 +1,51 @@
+.tabs-striped.tabs-background-home .tabs {
+  background-color: $tab-bg-color;
+  background-image: none;
+  border-bottom: none;
+
+  .tab-item {
+
+    color: #6d6d6d;
+
+    .icon {
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 75% 75%;
+    }
+
+    .icon {
+      &.tab-icon-calendar {
+        background-image: url('../img/tab-calendar-icon-off.svg');
+      }
+
+      &.tab-icon-feed {
+        background-image: url('../img/tab-feed-icon-off.svg');
+      }
+
+      &.tab-icon-profile {
+        background-image: url('../img/tab-profile-icon-off.svg');
+      }
+    }
+
+    &.tab-item-active, &.tab-item-activated {
+
+      color: #feb158;
+
+      .icon {
+        &.tab-icon-calendar {
+          background-image: url('../img/tab-calendar-icon-on.svg');
+        }
+
+        &.tab-icon-feed {
+          background-image: url('../img/tab-feed-icon-on.svg');
+        }
+
+        &.tab-icon-profile {
+          background-image: url('../img/tab-profile-icon-on.svg');
+        }
+      }
+    }
+  }
+
+
+}
